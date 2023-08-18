@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import React from "react";
 // import style from "./style";
-import { color } from "../../constants/theme";
+import { themes } from "../../constants/theme";
 import { style } from "./styles";
 import { FONTSIZE } from "../../constants";
 
@@ -18,7 +18,7 @@ const Button = ({ text, loading }) => {
       style={[
         style.button,
         {
-          backgroundColor: color.light.primary,
+          backgroundColor: themes.light.primary,
           height: 51,
           width: "100%",
           marginVertical: 5,
@@ -26,13 +26,13 @@ const Button = ({ text, loading }) => {
       ]}
     >
       {loading ? (
-        <ActivityIndicator size={"small"} color={color.light.white} />
+        <ActivityIndicator size={"small"} color={themes.light.white} />
       ) : (
         <Text
           style={[
             style.text,
             {
-              color: color.light.white,
+              color: "cornsilk",
               fontSize: FONTSIZE.medium,
               //   fontFamily: "Inter-Black",
             },

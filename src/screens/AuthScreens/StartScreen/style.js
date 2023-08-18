@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 import { FONTSIZE, FONTWEIGHT } from "../../../constants";
-import { color } from "../../../constants/theme";
+import { themes } from "../../../constants/theme";
 
 export const style = StyleSheet.create({
   container: {
@@ -16,7 +16,7 @@ export const style = StyleSheet.create({
     marginBottom: 60,
   },
   caption: {
-    color: color.light.black,
+    color: themes.light.black,
     fontSize: FONTSIZE.xlarge + 10,
     textAlign: "center",
     lineHeight: 40,
@@ -24,13 +24,13 @@ export const style = StyleSheet.create({
     fontFamily: "Inter-Black",
   },
   authcaption: {
-    color: color.light.black,
+    color: themes.light.black,
     fontSize: FONTSIZE.medium - 1,
     fontWeight: FONTWEIGHT.bold,
     marginTop: 10,
   },
   authtext: {
-    color: color.light.primary,
+    color: themes.light.primary,
     textDecorationLine: "underline",
     fontWeight: FONTWEIGHT.bold,
     fontSize: FONTSIZE.medium,

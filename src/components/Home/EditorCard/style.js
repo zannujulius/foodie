@@ -20,7 +20,7 @@ export const style = StyleSheet.create({
     paddingTop: 5,
   },
   price: {
-    color: color.light.primary,
+    color: themes.light.primary,
     fontWeight: FONTWEIGHT.bold,
     paddingTop: 8,
   },

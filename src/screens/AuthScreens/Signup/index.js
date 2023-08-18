@@ -16,7 +16,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { useTheme } from "@react-navigation/native";
 
-const Signin = ({ closeBtn }) => {
+const Signup = ({ closeBtn }) => {
   let { navigate } = useNavigation();
   const { colors } = useTheme();
 
@@ -141,4 +141,4 @@ const Signin = ({ closeBtn }) => {
   );
 };
 
-export default Signin;
+export default Signup;

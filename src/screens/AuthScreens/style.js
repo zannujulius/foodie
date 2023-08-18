@@ -6,7 +6,7 @@ import {
   flexRowEnd,
   flexRowStart,
 } from "../../constants/CustomStyle";
-import { color } from "../../constants/theme";
+import { themes } from "../../constants/theme";
 export const style = StyleSheet.create({
   container: {
     flex: 1,
@@ -20,7 +20,7 @@ export const style = StyleSheet.create({
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     padding: 10,
-    backgroundColor: color.light.white,
+    backgroundColor: themes.light.white,
     alignItems: "center",
     justifyContent: "space-between",
   },
@@ -48,7 +48,7 @@ export const style = StyleSheet.create({
   },
   closebtn: {
     fontSize: FONTSIZE.medium - 1,
-    color: color.light.primary,
+    color: themes.light.primary,
     padding: 6,
   },
   authclose: {
@@ -63,7 +63,7 @@ export const style = StyleSheet.create({
     height: 50,
     ...flexCenter,
     borderRadius: 5,
-    backgroundColor: color.light.white,
+    backgroundColor: themes.light.white,
     ...shadow,
     marginVertical: 8,
   },

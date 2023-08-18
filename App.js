@@ -29,6 +29,7 @@ import { flexColumnCenter } from "./src/constants/CustomStyle";
 import { getToken } from "./src/utils/token";
 import * as SecureStore from "expo-secure-store";
 import { themes } from "./src/constants/theme";
+import Signup from "./src/screens/AuthScreens/Signup";
 
 export default function App() {
   const [mode, setMode] = useState(false);
@@ -101,6 +102,7 @@ export default function App() {
         >
           <Stack.Screen name="onboarding" component={StartScreen} />
           <Stack.Screen name="home" component={Home} />
+          <Stack.Screen name="signup" component={Signup} />
         </Stack.Navigator>
       </NavigationContainer>
     </ThemeContext.Provider>

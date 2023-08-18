@@ -22,9 +22,7 @@ import { getToken, setToken } from "../../utils/token";
 import { EventRegister } from "react-native-event-listeners";
 
 const Home = () => {
-  const [sort, setsort] = useState("");
-  const [mode, setMode] = useState(false);
-  const theme = useContext(ThemeContext);
+  const [sort, setsort] = useState("All");
 
   return (
     <Wrapper>
@@ -32,7 +30,11 @@ const Home = () => {
       <View style={style.container}>
         <View style={style.topcontent}>
           <Text style={style.timeicon}>⛅</Text>
-          <View>
+          <View
+            style={{
+              paddingLeft: 10,
+            }}
+          >
             <Text style={style.greeting}>Good morning</Text>
             <Text style={style.greetingcaption}>
               What are you craving today
@@ -48,7 +50,7 @@ const Home = () => {
           contentContainerStyle={style.sortcover}
           showsHorizontalScrollIndicator={false}
         >
-          {["Trending", "Newest", "Price", "Rating", "Nearest"].map(
+          {["All", "Trending", "Newest", "Price", "Rating", "Nearest"].map(
             (i, index) => (
               <SortPill title={i} key={index} setsort={setsort} sort={sort} />
             )

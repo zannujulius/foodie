@@ -20,7 +20,8 @@ export const style = StyleSheet.create({
   topcontent: {
     flexDirection: "row",
     alignItems: "center",
-    paddingBottom: 10,
+    paddingBottom: 20,
+    paddingTop: 20,
   },
   timeicon: {
     fontSize: 25,

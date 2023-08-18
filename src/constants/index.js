@@ -1,7 +1,7 @@
-import { color } from "./theme";
+import { themes } from "./theme";
 
 export const shadow = {
-  backgroundColor: color.light.white,
+  backgroundColor: themes.light.white,
   shadowColor: "#d3d3d3",
   shadowOffset: { width: 1, height: 1 },
   shadowOpacity: 1,

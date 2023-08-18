@@ -10,9 +10,10 @@ import "./style";
 import style from "./style";
 import Button from "../../../components/Button";
 import Signin from "../Signin";
-
+import { useNavigation } from "@react-navigation/native";
 const StartScreen = () => {
   const [signinmodal, setsigninmodal] = useState(false);
+  let { navigate } = useNavigation();
   return (
     <ImageBackground
       style={style.container}
@@ -28,7 +29,14 @@ const StartScreen = () => {
           <Text style={style.caption}>Get your favorite</Text>
           <Text style={style.caption}>food delivered.</Text>
         </View>
-        <Button text={"Get started"} />
+        <TouchableOpacity
+          style={{
+            width: "100%",
+          }}
+          onPress={() => navigate("signup")}
+        >
+          <Button text={"Get started"} />
+        </TouchableOpacity>
         <View
           style={{
             display: "flex",
